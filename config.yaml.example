@@ -1,0 +1,15 @@
+# Configuration file for OpenRouter Free Models Updater
+# Copy this file to config.yaml and edit as needed
+
+# Paths to Hermes configuration files
+paths:
+  model_catalog: ~/.hermes/cache/model_catalog.json
+  provider_model_catalog: ~/.hermes-web-ui/cache/provider-model-catalog.json
+
+# OpenRouter API configuration
+api:
+  frontend_url: https://openrouter.ai/api/frontend/v1/models/find?active=true&fmt=cards&q=free
+  timeout: 30
+
+# Web UI cache key (usually don't need to change this)
+webui_key: "profile:default|openrouter|https://openrouter.ai/api/v1|free"
